@@ -195,6 +195,20 @@ function video_feature_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'imageapi_image_toolkit';
+  $strongarm->value = 'imageapi_gd';
+
+  $export['imageapi_image_toolkit'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'imageapi_jpeg_quality';
+  $strongarm->value = '95';
+
+  $export['imageapi_jpeg_quality'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_options_video';
   $strongarm->value = array(
     0 => 'status',
